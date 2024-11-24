@@ -4,7 +4,8 @@
 ### Disclaimer.
 This repository provides an example of a mock Rscript which is part of a workflow from unpublished work. The script was anonymized and intended to show part of the workflow.
 
-## Steps of the workflow (written as `Rscript`):
+## Steps of the workflow written in R:
+Contained within the subdirectory `01_Secondhits_multidimensional_data` in the Rscript `Script_secondhits_CNVs_multidimensional_data.R`.
 
 ### 1) Determine second hit of each germline variant based on their genomic coordinates using CNVs data.
 Evaluate whether the genomic coordinate of a given germline variant is present within a segment of the CNV data to assess whether there is LOH for the variant in question. This analysis is scaled up to every germline variant identified in the germline exome of the patient. A germline variant with a second hit via LOH is considered a form of biallelic inactivation.
@@ -17,7 +18,7 @@ Evaluate whether there is a somatic inactivating point mutation in the second al
 
 ### 4) Integration of multidimensional data.
 Integrate:
-- Germline data (information of each variant).
+- Germline data (information of each germline genetic variant).
 - Tumor data (second hits either as LOH or point mutations, CNV status of the 6 HRD-related genes, methylation in <i>BRCA1/RAD51C</i>, and Signature 3).
 - Clinical data (age of diagnosis, sex, ethnicity, clinical subtype, among others).
 
